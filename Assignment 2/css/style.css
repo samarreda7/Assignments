@@ -2,63 +2,69 @@ body {
   padding: 0;
 }
 * {
-  font-family: "Google Sans ", Roboto, arial, sans-serif;
+  font-family: "ui-sans-serif ", Roboto, arial, sans-serif;
 }
 .hero {
   height: 70vh;
+  padding-bottom: 80px;
+  
 }
 .container {
-  height: 55vh;
-  width: 73%;
+  height: 65vh;
+  width: 85%;
   margin: auto;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 35px;
+  
 }
 .hero__content {
-  margin-left: 48px;
-  width: 55%;
+  margin-left: 30px;
+  width: 52%;
   float: left;
 }
 
 .hero__content h1 {
-  font-size: 48px;
-  line-height: 4rem;
-  font-weight: bold;
-  width: 65%;
+  font-size: 60px;
+  line-height: 4.6rem;
+  font-weight: 900;
+  width: 70%;
   margin-left: 2%;
+  color: rgb(16, 24, 40);
 }
 .hero__content p {
-  width: 80%;
+  width: 90%;
   color: rgb(104, 116, 130);
-  margin-left: 2%;
+  margin-left: 12px;
   font-size: 20px;
-  line-height: 1.7rem;
+  line-height: 2rem;
 }
 .hero-buttons button {
-  margin-left: 20px;
-  height: 60px;
+  margin-right: 20px;
+  height: 64px;
   border-radius: 10px;
+  font-size: 19px;
 }
 .start-btn {
-  width: 30%;
+  width: 35%;
   background-color: black;
   color: white;
 }
 .learn-more-btn {
   width: 25%;
-  border: 2px solid rgb(209,213,220);
-  /* border-color: rgb(209,213,220); */
+  border: 2px solid rgb(209, 213, 220);
+  background: white;
 }
 
 .hero__img {
-  margin-top: 10px;
-  width: 35%;
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 32%;
   float: left;
 }
 .hero__img img {
   margin-top: 45px;
   width: 100%;
-  border-radius: 10%;
+  border-radius: 20px;
 }
 
 .clear-fix {
@@ -68,24 +74,28 @@ body {
 /* ////////////////why choose////////////////// */
 
 .why-choose-us {
-  width: 75%;
+  width: 85%;
   margin: auto;
   text-align: center;
 }
 
 .why-choose-us .title h2 {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 38px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .why-choose-us .title p {
-  width: 50%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   font-size: 110%;
   color: rgb(94, 93, 93);
+  padding-top: 16px;
+  padding-bottom: 20px;
+  font-size: 21px;
+  font-weight: 400;
 }
 
 .benfit-cards {
@@ -93,15 +103,15 @@ body {
   margin: auto;
 }
 .card h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 .benfit-cards .card {
   text-align: center;
-  width: 31%;
+  width: 30%;
   float: left;
   margin-left: 20px;
-  height: 300px;
+  height: 260px;
 }
 .blue-card {
   background-color: rgb(219, 234, 254);
@@ -120,12 +130,13 @@ body {
   border-radius: 5%;
 }
 .small-Square {
-  width: 42px;
-  height: 42px;
-  border: 30px solid;
-  border-radius: 30%;
+  width: 30px;
+  height: 32px;
+  border: 17px solid;
+  border-radius: 15px;
   margin: auto;
   margin-top: 25px;
+  background: white;
 }
 .blue-card .small-Square {
   border-color: rgb(21, 93, 252);
@@ -133,7 +144,6 @@ body {
 
 .green-card .small-Square {
   border-color: rgb(0, 153, 102);
-  background: white;
 }
 
 .violet-card .small-Square {
@@ -146,7 +156,8 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   line-height: 1.4rem;
-  font-size: 15px;
+  font-size: 14px;
+  color: rgb(94, 93, 93);
 }
 /* ///////////////////////////////more-benfits///////////////////////// */
 
@@ -165,12 +176,12 @@ body {
   border-radius: 10px;
 }
 .benfit-content {
-  width: 41%;
+  width: 40%;
   float: left;
   margin-left: 40px;
 }
 .benfit-content .heading {
-  font-size: 27px;
+  font-size: 29px;
   font-weight: 750;
   margin-top: 0px;
   margin-bottom: 0;
@@ -185,11 +196,11 @@ body {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0;
-  padding-top: 8px;
+  padding-top: 12px;
   margin-top: 20px;
 }
 .benfit p {
-  margin-top: 7px;
+  margin-top: 10px;
   font-size: 14px;
   color: rgb(94, 93, 93);
 }
@@ -200,7 +211,7 @@ body {
   padding-bottom: 40px;
 }
 .testimonials .container {
-  width: 75%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   height: 75vh;
@@ -283,6 +294,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
+  width: 98%;
 }
 .statistics .card {
   width: 22%;
@@ -305,16 +317,14 @@ body {
   width: 100%;
 }
 .membership-form .container {
-  width: 65%;
+  width: 75%;
   margin-right: auto;
   margin-left: auto;
   padding-top: 30px;
   height: 100%;
-
 }
-.membership-form .container .title{
-      text-align: center;
-
+.membership-form .container .title {
+  text-align: center;
 }
 
 .membership-form .container h2 {
@@ -331,48 +341,51 @@ body {
   width: 68%;
 }
 .form {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
   padding: 40px 0px 15px 40px;
   background: rgb(249, 250, 251);
 }
-.container.name {
-  width: 49%;
+.membership-form .container .name {
+  width: 47%;
   float: left;
 }
 .form label {
-  font-size: 22px;
+  font-size: 18px;
   margin-left: 10px;
+  color: rgb(54, 65, 83);
 }
 .form .name input {
   width: 94%;
-  height: 45px;
+  height: 49px;
+  margin-left: 6px;
 }
 
 .form input,
 textarea {
-  width: 95%;
-  height: 48px;
+  width: 90%;
+  height: 50px;
   margin-top: 5px;
   margin-left: 10px;
   margin-bottom: 15px;
-  padding-left: 6px;
+  padding-left: 12px;
   font-size: 16px;
   border-radius: 5px;
-  border: 2px solid rgb(239, 240, 243);
+  border: 2px solid rgb(209, 213, 220);
+  font-size: 17px;
 }
 .form select {
-  width: 97%;
-  height: 48px;
+  width: 92%;
+  height: 52px;
   margin-top: 5px;
   margin-left: 10px;
   margin-bottom: 15px;
   padding-left: 6px;
   font-size: 16px;
   border-radius: 5px;
-  border: 2px solid rgb(239, 240, 243);
+  border: 2px solid rgb(209, 213, 220);
 }
 
 .form #goals {
@@ -392,6 +405,7 @@ textarea {
 }
 .container .form p {
   width: 100%;
+  text-align: center;
 }
 /* //////////////////////////////footer///////////////////////////////////////////// */
 
@@ -407,6 +421,7 @@ textarea {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
 }
 .footer .content {
   height: 40vh;
