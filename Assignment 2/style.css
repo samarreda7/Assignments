@@ -1,0 +1,480 @@
+body {
+  padding: 0;
+}
+* {
+  font-family: "Google Sans ", Roboto, arial, sans-serif;
+}
+.hero {
+  height: 70vh;
+}
+.container {
+  height: 55vh;
+  width: 73%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.hero__content {
+  margin-left: 48px;
+  width: 55%;
+  float: left;
+}
+
+.hero__content h1 {
+  font-size: 48px;
+  line-height: 4rem;
+  font-weight: bold;
+  width: 65%;
+  margin-left: 2%;
+}
+.hero__content p {
+  width: 80%;
+  color: rgb(104, 116, 130);
+  margin-left: 2%;
+  font-size: 20px;
+  line-height: 1.7rem;
+}
+.hero-buttons button {
+  margin-left: 20px;
+  height: 60px;
+  border-radius: 10px;
+}
+.start-btn {
+  width: 30%;
+  background-color: black;
+  color: white;
+}
+.learn-more-btn {
+  width: 25%;
+  border: 2px solid rgb(209,213,220);
+  /* border-color: rgb(209,213,220); */
+}
+
+.hero__img {
+  margin-top: 10px;
+  width: 35%;
+  float: left;
+}
+.hero__img img {
+  margin-top: 45px;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.clear-fix {
+  clear: left;
+}
+
+/* ////////////////why choose////////////////// */
+
+.why-choose-us {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.why-choose-us .title h2 {
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.why-choose-us .title p {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 110%;
+  color: rgb(94, 93, 93);
+}
+
+.benfit-cards {
+  height: 40vh;
+  margin: auto;
+}
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.benfit-cards .card {
+  text-align: center;
+  width: 31%;
+  float: left;
+  margin-left: 20px;
+  height: 300px;
+}
+.blue-card {
+  background-color: rgb(219, 234, 254);
+  border: 2px solid rgb(205, 227, 255);
+  border-radius: 5%;
+}
+.green-card {
+  background-color: rgb(208, 250, 229);
+  border: 2px solid rgb(169, 244, 209);
+  border-radius: 5%;
+}
+
+.violet-card {
+  background-color: rgb(243, 232, 255);
+  border: 2px solid rgb(234, 214, 255);
+  border-radius: 5%;
+}
+.small-Square {
+  width: 42px;
+  height: 42px;
+  border: 30px solid;
+  border-radius: 30%;
+  margin: auto;
+  margin-top: 25px;
+}
+.blue-card .small-Square {
+  border-color: rgb(21, 93, 252);
+}
+
+.green-card .small-Square {
+  border-color: rgb(0, 153, 102);
+  background: white;
+}
+
+.violet-card .small-Square {
+  border-color: rgb(152, 16, 250);
+}
+
+.card p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.4rem;
+  font-size: 15px;
+}
+/* ///////////////////////////////more-benfits///////////////////////// */
+
+.more-benfits {
+  margin-top: 30px;
+  height: 38vh;
+  text-align: start;
+}
+.benfit-image {
+  width: 46%;
+  margin-left: 20px;
+}
+.benfit-image img {
+  width: 100%;
+  float: left;
+  border-radius: 10px;
+}
+.benfit-content {
+  width: 41%;
+  float: left;
+  margin-left: 40px;
+}
+.benfit-content .heading {
+  font-size: 27px;
+  font-weight: 750;
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.benfit {
+  border-left: 4px solid black;
+  padding-left: 12px;
+}
+.benfit h5 {
+  font-family: "Google Sans", Roboto, arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+.benfit p {
+  margin-top: 7px;
+  font-size: 14px;
+  color: rgb(94, 93, 93);
+}
+/* //////////////////////section 4///////////////////////// */
+.testimonials {
+  width: 100%;
+  background: rgb(249, 250, 251);
+  padding-bottom: 40px;
+}
+.testimonials .container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 67vh;
+}
+
+.testimonials .container .title h2 {
+  padding-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 32px;
+}
+.testimonials .container .title p {
+  font-size: 110%;
+  margin-bottom: 40px;
+  text-align: center;
+  color: rgb(94, 93, 93);
+}
+
+.container .reviews {
+  height: 26vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews .card {
+  width: 31%;
+  float: left;
+  margin-left: 20px;
+}
+.card-one {
+  background-color: rgb(239, 246, 255);
+  border: 1px solid rgb(193, 220, 254);
+  border-radius: 20px;
+}
+.card-two {
+  background-color: rgb(236, 253, 245);
+  border: 1px solid rgb(208, 246, 228);
+  border-radius: 20px;
+}
+.card-three {
+  background-color: rgb(250, 245, 255);
+  border: 1px solid rgb(242, 230, 255);
+  border-radius: 20px;
+}
+.card .card-header {
+  padding-top: 10px;
+}
+.author-img {
+  width: 14%;
+  background: blue;
+  margin-left: 20px;
+}
+.author-img img {
+  width: 100%;
+  float: left;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.author-info {
+  float: left;
+  margin-left: 15px;
+}
+.author-info .author--name {
+  margin-top: 15px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.author-info p {
+  margin-top: 5px;
+}
+.card blockquote {
+  text-align: left;
+  padding: 0px 15px 30px 18px;
+}
+
+.testimonials .statistics {
+  background: rgb(241, 245, 249);
+  border: 2px solid rgb(238, 243, 247);
+  border-radius: 15px;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+}
+.statistics .card {
+  width: 22%;
+  float: left;
+  padding-left: 10px;
+  text-align: center;
+}
+.statistics .card h4 {
+  font-size: 35px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.statistics .card p {
+  margin-top: 0;
+  color: gray;
+}
+
+/* ///////////////////////////////////////////signup/////////////////////////////////////////////// */
+.membership-form {
+  width: 100%;
+}
+.membership-form .container {
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  height: 100%;
+}
+
+.membership-form .container h2 {
+  word-spacing: 2px;
+  margin-bottom: 0;
+  font-size: 33px;
+  text-align: center;
+}
+.membership-form .container p {
+  font-size: 110%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  text-align: center;
+  color: rgb(129, 137, 160);
+  width: 68%;
+}
+.form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 40px 0px 15px 40px;
+  background: rgb(249, 250, 251);
+}
+.container.name {
+  width: 49%;
+  float: left;
+}
+.form label {
+  font-size: 22px;
+  margin-left: 10px;
+}
+.form .name input {
+  width: 94%;
+  height: 45px;
+}
+
+.form input,
+textarea {
+  width: 95%;
+  height: 48px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding-left: 6px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid rgb(239, 240, 243);
+}
+.form select {
+  width: 97%;
+  height: 48px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding-left: 6px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid rgb(239, 240, 243);
+}
+
+.form #goals {
+  height: 70px;
+  padding-top: 10px;
+  resize: none;
+}
+.form button {
+  width: 95%;
+  height: 60px;
+  margin-left: 10px;
+  margin-bottom: 15 px;
+  background: black;
+  color: white;
+  font-size: 22px;
+  border-radius: 10px;
+}
+.container .form p {
+  width: 100%;
+}
+/* //////////////////////////////footer///////////////////////////////////////////// */
+
+.footer {
+  width: 100%;
+  height: 58vh;
+  background: rgb(16, 24, 40);
+  color: white;
+  position: relative;
+  top: 70px;
+  padding-top: 25px;
+}
+.footer .container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .content {
+  height: 40vh;
+  border-bottom: 1px solid rgb(39, 49, 66);
+}
+.content h6 {
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.content .websites {
+  width: 50%;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: left;
+}
+.content .websites P {
+  font-size: 20px;
+  color: rgb(118, 138, 148);
+}
+.content .websites a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 10px;
+  font-size: 20px;
+  color: rgb(118, 138, 148);
+}
+.quicklinks {
+  float: left;
+  width: 22%;
+  padding-left: 20px;
+}
+.quicklinks h6 {
+  font-size: 21px;
+}
+.content .quicklinks a {
+  display: block;
+  text-decoration: none;
+  color: rgb(118, 138, 148);
+  font-size: 18px;
+  margin-top: 15px;
+}
+.contact-info {
+  width: 22%;
+  float: left;
+}
+.contact-info h6 {
+  font-size: 21px;
+}
+.contact-info .contact-name {
+  margin-top: 5px;
+}
+.contact-info .contact-data {
+  color: rgb(118, 138, 148);
+}
+
+.copywrite {
+  padding-top: 25px;
+  color: rgb(118, 138, 148);
+}
+.copywrite P {
+  margin-top: 0;
+  float: left;
+}
+.copywrite .terms {
+  float: right;
+}
+.copywrite .terms a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: inherit;
+}
