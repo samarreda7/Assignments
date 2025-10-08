@@ -185,7 +185,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0;
-  padding-top: 15px;
+  padding-top: 8px;
   margin-top: 20px;
 }
 .benfit p {
@@ -203,7 +203,7 @@ body {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  height: 67vh;
+  height: 75vh;
 }
 
 .testimonials .container .title h2 {
@@ -279,7 +279,7 @@ body {
   background: rgb(241, 245, 249);
   border: 2px solid rgb(238, 243, 247);
   border-radius: 15px;
-  height: 15vh;
+  height: 20vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
@@ -310,20 +310,23 @@ body {
   margin-left: auto;
   padding-top: 30px;
   height: 100%;
+
+}
+.membership-form .container .title{
+      text-align: center;
+
 }
 
 .membership-form .container h2 {
   word-spacing: 2px;
   margin-bottom: 0;
   font-size: 33px;
-  text-align: center;
 }
 .membership-form .container p {
   font-size: 110%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
-  text-align: center;
   color: rgb(129, 137, 160);
   width: 68%;
 }
@@ -399,7 +402,6 @@ textarea {
   color: white;
   position: relative;
   top: 70px;
-  padding-top: 25px;
 }
 .footer .container {
   width: 75%;
