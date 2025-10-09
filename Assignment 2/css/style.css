@@ -7,7 +7,6 @@ body {
 .hero {
   height: 70vh;
   padding-bottom: 80px;
-  
 }
 .container {
   height: 65vh;
@@ -15,7 +14,6 @@ body {
   margin: auto;
   overflow: hidden;
   margin-top: 35px;
-  
 }
 .hero__content {
   margin-left: 30px;
@@ -131,12 +129,12 @@ body {
 }
 .small-Square {
   width: 30px;
-  height: 32px;
+  height: 30px;
   border: 17px solid;
   border-radius: 15px;
   margin: auto;
   margin-top: 25px;
-  background: white;
+  background-color: white;
 }
 .blue-card .small-Square {
   border-color: rgb(21, 93, 252);
@@ -144,8 +142,17 @@ body {
 
 .green-card .small-Square {
   border-color: rgb(0, 153, 102);
+  background-color: rgb(0, 153, 102);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.green-card .white-circle {
+  width: 40px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
 .violet-card .small-Square {
   border-color: rgb(152, 16, 250);
 }
