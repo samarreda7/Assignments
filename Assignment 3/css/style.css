@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  background: rgb(245, 243, 255);
+  margin-top: 0;
+  border-bottom: 2px solid rgb(225, 219, 255);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.container {
+  width: 85%;
+  margin: auto;
+  padding-top: 20px;
+}
+nav h1 {
+  margin-top: 0;
+  font-size: 29px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+}
+nav .container .logo {
+  float: left;
+}
+.container .links {
+  float: right;
+  padding-top: 5px;
+}
+nav .container ul {
+  margin-top: 0;
+}
+nav .container ul li {
+  list-style: none;
+  color: rgb(51, 51, 51);
+  float: left;
+  margin-left: 20px;
+  font-size: 20px;
+  position: relative;
+}
+nav .container ul li a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+nav .container .links ul .deafult-selected a {
+  color: rgb(140, 84, 254);
+}
+nav .container ul li a:visited {
+  color: rgb(51, 51, 51);
+}
+
+nav .container ul .deafult-selected::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(140, 84, 254);
+}
+
+nav .container ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(140, 84, 254);
+  transition: width 1s ease;
+}
+nav .container ul li:hover::after {
+  width: 100%;
+}
+nav .container ul li:hover a {
+  color: rgb(140, 84, 254);
+}
+.clear-fix {
+  clear: both;
+}
+/* /////////////////////////////////////hero sectoin/////////////////////////// */
+.hero {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  padding-bottom: 5vh;
+}
+.hero .container {
+  width: 85%;
+  margin: auto;
+  margin-top: 2vh;
+}
+.hero-img {
+  padding: 20px;
+  width: 47%;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(228, 230, 233);
+  border-radius: 20px;
+  float: left;
+  position: relative;
+}
+.hero-img .img-save {
+  position: absolute;
+  top: 35px;
+  left: 45px;
+  background: rgb(142, 81, 255);
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 20px;
+}
+.hero-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+.hero-content {
+  float: left;
+  width: 51%;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.hero-content .hero-buttons button {
+  float: left;
+  background: rgb(166, 132, 255);
+  color: white;
+  width: 130px;
+  margin-left: 25px;
+  height: 25px;
+  margin-top: 5px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border: none;
+}
+.hero-content h1 {
+  font-size: 45px;
+  color: rgb(51, 51, 51);
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.hero-content h1 span {
+  color: rgb(166, 132, 255);
+  font-size: 46px;
+}
+.hero-content p {
+  color: rgb(51, 51, 51);
+  font-size: 22px;
+  margin-left: 25px;
+  line-height: 2rem;
+}
+.hero-content .price p {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.hero-content .price p span {
+  font-size: 25px;
+  text-decoration: line-through;
+}
+.hero-content .price .save-price {
+  font-size: 16px;
+  font-weight: 900;
+  text-decoration: none;
+  background: rgb(255, 226, 226);
+  color: rgb(231, 2, 11);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.hero-content .price-details {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  margin-top: 8px;
+}
+.hero-content .cart-wishlist-buttons {
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+}
+.hero-content .cart-wishlist-buttons button {
+  width: 100%;
+  height: 55px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.2s;
+}
+.hero-content .cart-wishlist-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.hero-content .cart-wishlist-buttons .cart {
+  background: rgb(142, 81, 255);
+  color: white;
+}
+.hero-content .cart-wishlist-buttons .wishlist {
+  margin-top: 15px;
+  background: white;
+  border: 2px solid rgb(209, 213, 220);
+}
+
+/* //////////////////////specifications///////////////////////// */
+.specifications {
+  background: rgb(247, 245, 255);
+  width: 100%;
+}
+.specifications .container {
+  width: 85%;
+  padding-bottom: 40px;
+}
+.specifications .container .content {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.container .content h2 {
+  font-size: 36px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 0;
+}
+.content h2 span {
+  color: rgb(142, 81, 255);
+}
+.container .content p {
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+  margin-top: 10px;
+}
+.specifications .container .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+.specifications .container table {
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px 25px;
+  border: 2px solid rgb(209, 213, 220);
+  margin-bottom: 40px;
+  min-width: 800px;
+  border-spacing: 0;
+}
+.specifications .container table tfoot .radius-td {
+  border-radius: 0 0 20px 20px;
+}
+.specifications .container table thead .radius-td {
+  border-radius: 20px 20px 0 0;
+  padding-top: 35px;
+}
+.container table td:nth-child(2),
+.container table th:nth-child(2) {
+  background-color: rgb(237, 233, 254);
+}
+.container table td:nth-child(2) p {
+  margin: auto;
+  background-color: rgb(142, 81, 255);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 40%;
+  border-radius: 20px;
+  color: white;
+}
+.container table td:nth-child(1),
+.container table th:nth-child(1) {
+  text-align: left;
+}
+.specifications .container table .orange-td {
+  color: rgb(251, 154, 69);
+}
+.container table th {
+  font-size: 18px;
+  padding-top: 10px;
+}
+table th p {
+  font-size: 16px;
+  color: rgb(113, 116, 130);
+}
+.container table tr,
+tfoot {
+  height: 70px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.container table tbody td {
+  border-bottom: 2px solid #ddd;
+}
+
+.specifications .container .specifications-foot {
+  width: 25%;
+  border: 2px solid rgb(229, 231, 235);
+  border-radius: 20px;
+  color: rgb(0, 166, 62);
+  text-align: center;
+  margin: auto;
+  background: white;
+}
+.specifications-foot .head {
+  font-size: 20px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.specifications-foot p {
+  margin-top: 0;
+}
