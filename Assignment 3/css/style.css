@@ -1,9 +1,14 @@
 * {
   box-sizing: border-box;
+  font-family: "Exo", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   padding: 0;
   margin: 0;
+}
+::selection {
+  background-color: rgb(140, 84, 254);
 }
 nav {
   width: 100%;
@@ -20,18 +25,36 @@ nav {
   margin: auto;
   padding-top: 20px;
 }
-nav h1 {
-  margin-top: 0;
-  font-size: 29px;
-  font-weight: 700;
-  color: rgb(51, 51, 51);
-}
 nav .container .logo {
   float: left;
 }
+nav .logo .logo-img {
+  width: 40px;
+  height: 40px;
+  background: rgb(140, 84, 254);
+  float: left;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 10px;
+}
+nav .logo .logo-img img {
+  width: 60%;
+}
+nav .logo h1 {
+  margin-top: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  margin-left: 10px;
+  float: left;
+}
+nav .logo h1 {
+  margin-top: 3px;
+  font-size: 24px;
+}
 .container .links {
   float: right;
-  padding-top: 5px;
+  padding-top: 6px;
 }
 nav .container ul {
   margin-top: 0;
@@ -40,8 +63,8 @@ nav .container ul li {
   list-style: none;
   color: rgb(51, 51, 51);
   float: left;
-  margin-left: 20px;
-  font-size: 20px;
+  margin-left: 22px;
+  font-size: 16px;
   position: relative;
 }
 nav .container ul li a {
@@ -111,10 +134,10 @@ nav .container ul li:hover a {
   top: 35px;
   left: 45px;
   background: rgb(142, 81, 255);
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color: white;
-  padding: 3px 7px;
+  padding: 4px 7px;
   border-radius: 20px;
 }
 .hero-img img {
@@ -153,16 +176,18 @@ nav .container ul li:hover a {
 }
 .hero-content p {
   color: rgb(51, 51, 51);
-  font-size: 22px;
+  font-size: 20px;
   margin-left: 25px;
-  line-height: 2rem;
+  line-height: 1.8rem;
 }
 .hero-content .price p {
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: 700;
   margin-bottom: 0;
 }
 .hero-content .price p span {
-  font-size: 25px;
+  font-size: 24px;
+  font-weight: 400;
   text-decoration: line-through;
 }
 .hero-content .price .save-price {
@@ -202,11 +227,13 @@ nav .container ul li:hover a {
 .hero-content .cart-wishlist-buttons .cart {
   background: rgb(142, 81, 255);
   color: white;
+  cursor: pointer;
 }
 .hero-content .cart-wishlist-buttons .wishlist {
   margin-top: 15px;
   background: white;
   border: 2px solid rgb(209, 213, 220);
+  cursor: pointer;
 }
 
 /* //////////////////////specifications///////////////////////// */
@@ -249,6 +276,18 @@ nav .container ul li:hover a {
   min-width: 800px;
   border-spacing: 0;
 }
+.specifications table td:nth-child(1) div {
+  width: 22px;
+  float: left;
+  margin-right: 10px;
+}
+.specifications table td:nth-child(1) div img {
+  width: 100%;
+}
+.specifications table td:nth-child(1) p {
+  float: left;
+  margin-top: 0;
+}
 .specifications .container table tfoot .radius-td {
   border-radius: 0 0 20px 20px;
 }
@@ -265,9 +304,11 @@ nav .container ul li:hover a {
   background-color: rgb(142, 81, 255);
   padding-top: 3px;
   padding-bottom: 3px;
-  width: 40%;
   border-radius: 20px;
   color: white;
+  font-size: 14px;
+  display: inline;
+  padding: 3px 20px;
 }
 .container table td:nth-child(1),
 .container table th:nth-child(1) {
@@ -280,6 +321,10 @@ nav .container ul li:hover a {
   font-size: 18px;
   padding-top: 10px;
 }
+.container table tfoot td:first-child {
+  font-weight: 700;
+  font-size: 20px;
+}
 table th p {
   font-size: 16px;
   color: rgb(113, 116, 130);
@@ -287,13 +332,19 @@ table th p {
 .container table tr,
 tfoot {
   height: 70px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 .container table tbody td {
   border-bottom: 2px solid #ddd;
 }
-
+.container table tfoot td div {
+  width: 150px;
+  margin: auto;
+}
+.container table tfoot td div img {
+  width: 15%;
+}
 .specifications .container .specifications-foot {
   width: 25%;
   border: 2px solid rgb(229, 231, 235);
@@ -310,4 +361,217 @@ tfoot {
 }
 .specifications-foot p {
   margin-top: 0;
+}
+
+/* ////////////////////////////////////////customer-reviews/////////////////////////////////////////// */
+
+.customer-reviews .container {
+  width: 85%;
+  margin: auto;
+}
+.customer-reviews .container .heading {
+  text-align: center;
+}
+.customer-reviews .container .heading h2 {
+  font-size: 36px;
+  color: rgb(51, 51, 51);
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.customer-reviews .container .heading h2 span {
+  color: rgb(166, 132, 255);
+  font-size: 46px;
+}
+.customer-reviews .container .heading p {
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  margin-left: 25px;
+  line-height: 2rem;
+  margin-top: 10px;
+}
+.customer-reviews .container .wrapper {
+  position: relative;
+  padding-bottom: 30px;
+}
+.customer-reviews .container .stats {
+  width: 32%;
+  float: left;
+  padding: 15px 25px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 25px;
+  border: 2px solid rgb(229, 231, 235);
+  position: sticky;
+  top: 10px;
+}
+.customer-reviews .container .stats .rate-num {
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 0;
+  color: rgb(51, 51, 51);
+}
+.customer-reviews .container .stats .star-imgs {
+  width: 180px;
+  margin: auto;
+}
+.container .stats .star-imgs img {
+  width: 15%;
+}
+.customer-reviews .container .stats .stats-source {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  margin-top: 5px;
+}
+
+.container .stats .rate-sec {
+  height: 50px;
+}
+.container .stats .rate-star {
+  width: 6%;
+  float: left;
+}
+.stats .rate-sec p {
+  float: left;
+  margin-top: 0;
+  font-size: 16px;
+  color: rgb(52, 51, 51);
+}
+
+.stats .rate-sec .total-rate {
+  width: 70%;
+  height: 15px;
+  background: gray;
+  border-radius: 10px;
+  float: left;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+.rate-sec .total-rate .actual-rate {
+  height: 15px;
+  background: rgb(240, 177, 0);
+  border-radius: 10px;
+}
+.rate-sec .total-rate .first-rate {
+  width: 78%;
+}
+.rate-sec .total-rate .second-rate {
+  width: 15%;
+}
+.rate-sec .total-rate .third-rate {
+  width: 5%;
+}
+.rate-sec .total-rate .fouth-rate {
+  width: 1.5%;
+}
+.rate-sec .total-rate .fifth-rate {
+  width: 0.5%;
+}
+.stats .rate-sec .rate-precentage {
+  margin-top: 0;
+  width: 10%;
+  float: left;
+  padding-left: 5px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.stats-foot .card {
+  text-align: center;
+  width: 49%;
+  float: left;
+}
+
+.stats-foot .card .rate {
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  margin: 0;
+}
+.stats-foot .card p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+.review-cards {
+  width: 65%;
+
+  float: left;
+}
+.review-cards .customer-card {
+  width: 95%;
+  margin: 20px auto;
+  padding: 20px 20px;
+  border: 2px solid rgb(229, 231, 235);
+  border-radius: 20px;
+}
+.customer-card .head {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.customer-card .customer-img {
+  width: 57px;
+  float: left;
+  margin-top: 2px;
+}
+.customer-card .customer-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.customer-card .customer-info {
+  float: left;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.customer-card .customer-info .customer-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.customer-card .customer-info .customer-jop {
+  margin-top: 5px;
+  font-size: 16px;
+}
+.customer-card .card-info {
+  float: right;
+}
+.customer-card .card-info p {
+  margin: 5px;
+}
+.customer-card .card-info .text {
+  background: rgb(237, 233, 254);
+  color: rgb(146, 41, 202);
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 2px;
+}
+.customer-card .card-info .date {
+  padding-left: 40px;
+}
+.customer-card .review-text {
+  font-size: 18px;
+}
+.customer-reviews .container .wrapper .learnmore-button {
+  margin: auto;
+  width: 250px;
+  height: 60px;
+  margin-top: 30px;
+}
+.container .wrapper .learnmore-button button {
+  width: 230px;
+  height: 60px;
+  background: rgb(142, 81, 255);
+  color: white;
+  border: 1px solid rgb(142, 81, 255);
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.container .wrapper .learnmore-button button:hover {
+  background: white;
+  color: rgb(142, 81, 255);
 }

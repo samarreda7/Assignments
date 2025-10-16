@@ -21,4 +21,11 @@
   .specifications .container .specifications-foot{
     width: 50%;
   }
+  .customer-reviews .container .stats{
+    width: 100%;
+    position: static;
+  }
+  .review-cards{
+    width: 100%;
+  }
 }
