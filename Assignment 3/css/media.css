@@ -18,14 +18,41 @@
     clear: both;
     margin-left: 0;
   }
-  .specifications .container .specifications-foot{
+  .specifications .container .specifications-foot {
     width: 50%;
   }
-  .customer-reviews .container .stats{
+  .customer-reviews .container .stats {
     width: 100%;
     position: static;
   }
-  .review-cards{
+  .review-cards {
+    width: 100%;
+  }
+  .related-products .container .product-container .product-card {
+    width: 46%;
+  }
+  .related-products .more-product button {
+    width: 40%;
+  }
+  footer .container .card {
+    width: 50%;
+  }
+  footer .end-container p,footer .end-container .creditcard-img{
+    float: none;
+    text-align: center;
+  }
+  .footer .end-container{
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 770px) {
+  .related-products .container .product-container .product-card {
+    width: 100%;
+  }
+}
+@media (max-width: 826px) {
+  footer .container .card {
     width: 100%;
   }
 }

@@ -346,21 +346,37 @@ tfoot {
   width: 15%;
 }
 .specifications .container .specifications-foot {
-  width: 25%;
+  width: 380px;
   border: 2px solid rgb(229, 231, 235);
   border-radius: 20px;
   color: rgb(0, 166, 62);
-  text-align: center;
+  text-align: start;
   margin: auto;
   background: white;
 }
+.specifications-foot .img-sec {
+  width: 35px;
+  float: left;
+  margin-top: 17px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.specifications-foot .img-sec img {
+  width: 100%;
+}
+.specifications-foot .text {
+  width: 75%;
+  float: left;
+}
 .specifications-foot .head {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 16px;
   margin-bottom: 0;
+  font-weight: 700;
 }
 .specifications-foot p {
   margin-top: 0;
+  font-size: 15px;
 }
 
 /* ////////////////////////////////////////customer-reviews/////////////////////////////////////////// */
@@ -406,6 +422,7 @@ tfoot {
   border: 2px solid rgb(229, 231, 235);
   position: sticky;
   top: 10px;
+  margin-top: 25px;
 }
 .customer-reviews .container .stats .rate-num {
   font-size: 60px;
@@ -426,7 +443,10 @@ tfoot {
   color: rgb(51, 51, 51);
   margin-top: 5px;
 }
-
+.container .stats .content{
+  border-bottom: 2px solid rgb(229, 231, 235);
+  margin-bottom: 10px;
+}
 .container .stats .rate-sec {
   height: 50px;
 }
@@ -521,7 +541,7 @@ tfoot {
 }
 .customer-card .customer-info {
   float: left;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 2px;
 }
 .customer-card .customer-info .customer-name {
@@ -532,6 +552,22 @@ tfoot {
 .customer-card .customer-info .customer-jop {
   margin-top: 5px;
   font-size: 16px;
+  margin-bottom: 6px;
+}
+.customer-card .customer-info .customer-starRate-img {
+  width: 180px;
+  margin: auto;
+  margin: 0;
+  float: left;
+}
+.customer-card .customer-info .customer-starRate-img img {
+  width: 12%;
+  float: left;
+}
+.customer-card .customer-info .customer-starRate-img p {
+  float: left;
+  margin: 5px 6px;
+  font-size: 13px;
 }
 .customer-card .card-info {
   float: right;
@@ -552,6 +588,7 @@ tfoot {
 }
 .customer-card .review-text {
   font-size: 18px;
+  line-height: 1.7rem;
 }
 .customer-reviews .container .wrapper .learnmore-button {
   margin: auto;
@@ -574,4 +611,244 @@ tfoot {
 .container .wrapper .learnmore-button button:hover {
   background: white;
   color: rgb(142, 81, 255);
+}
+
+/* ///////////////////////////related-products///////////////////////////// */
+.related-products {
+  background: rgb(247, 245, 255);
+}
+.related-products .container {
+  width: 85%;
+  margin: auto;
+}
+.related-products .container .header {
+  text-align: center;
+}
+.related-products .container .header h2 {
+  font-size: 36px;
+  color: rgb(51, 51, 51);
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.related-products .container .header h2 span {
+  color: rgb(166, 132, 255);
+  font-size: 46px;
+}
+.related-products .container .header p {
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  margin-left: 25px;
+  line-height: 2rem;
+  margin-top: 10px;
+}
+.related-products .container .product-container {
+  width: 100%;
+}
+.related-products .container .product-container .product-card {
+  width: 23%;
+  padding: 20px;
+  border: 2px solid rgb(225, 227, 229);
+  border-radius: 20px;
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.container .product-container .product-img {
+  width: 100%;
+}
+.product-container .product-img img {
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+.product-container .product-card .product-img p {
+  position: absolute;
+  color: white;
+  font-weight: 600;
+  top: 20px;
+  left: 30px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.product-container .product-card .product-one p {
+  background: rgb(0, 187, 167);
+}
+.product-container .product-card .product-two p {
+  background: rgb(0, 201, 81);
+}
+.product-container .product-card .product-three p {
+  background: rgb(0, 184, 219);
+}
+.product-container .product-card .product-four p {
+  background: rgb(255, 105, 0);
+}
+.container .product-container .product-img img:hover {
+  transform: scale(1.05);
+}
+.container .product-container .product-name {
+  margin: 5px;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+}
+.container .product-container .product-description {
+  margin: 0;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+}
+.product-container .product-card .price-cart-container {
+  margin-top: 15px;
+}
+.product-container .product-card .price-cart-container p {
+  margin: 3px 0;
+  color: rgb(51, 51, 51);
+  float: left;
+  font-size: 23px;
+  font-weight: 700;
+}
+.product-container .product-card .price-cart-container button {
+  float: right;
+  margin: 0;
+  color: rgb(51, 51, 51);
+  height: 40px;
+  width: 110px;
+  background: rgb(142, 81, 255);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.related-products .more-product {
+  text-align: center;
+  padding: 40px;
+}
+.related-products .more-product button {
+  height: 55px;
+  width: 20%;
+  border: 2px solid rgb(146, 68, 254);
+  background: white;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(146, 68, 254);
+  border-radius: 20px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.related-products .more-product button:hover {
+  background: rgb(146, 68, 254);
+  color: white;
+}
+
+/* //////////////////////////////footer////////////////////////////////// */
+footer {
+  background: rgb(16, 24, 40);
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+footer .container {
+  margin: auto;
+  border-bottom: 2px solid rgb(24, 35, 51);
+  box-sizing: content-box;
+  padding-bottom: 20px;
+}
+footer .container .card {
+  width: 25%;
+  float: left;
+}
+
+.card .name-img-container .img {
+  width: 40px;
+  background: rgb(140, 84, 254);
+  padding: 2px;
+  border-radius: 10px;
+  float: left;
+}
+.card .name-img-container .img img {
+  width: 100%;
+}
+.card .name-img-container p {
+  font-size: 30px;
+  color: white;
+  width: 50px;
+  font-weight: 700;
+  float: left;
+  margin: 0 10px;
+}
+footer .container .card .about-text {
+  padding-top: 20px;
+  font-size: 18px;
+  color: rgb(182, 180, 190);
+  font-weight: 500;
+  line-height: 1.7rem;
+}
+footer .container .card .websites-logo {
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+footer .container .card .websites-logo img {
+  width: 45px;
+  margin-left: 10px;
+  background: rgb(30, 41, 57);
+  border-radius: 10px;
+  padding: 12px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+footer .container .card .websites-logo .facebook-img:hover {
+  background: rgb(50, 50, 232);
+}
+footer .container .card .websites-logo .instagram-img:hover {
+  background: rgba(194, 48, 48, 0.907);
+}
+footer .container .card .websites-logo .twitter-img:hover {
+  background: rgb(99, 192, 229);
+}
+footer .container .card .websites-logo .youtube-img:hover {
+  background: red;
+}
+footer .container .card .list-title {
+  color: white;
+  font-size: 21px;
+  font-weight: 600;
+  margin-left: 20px;
+  line-height: 20px;
+}
+footer .container .card ul {
+  list-style: none;
+  color: rgb(123, 131, 145);
+  padding-left: 20px;
+  font-size: 17px;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+footer .end-container {
+  width: 85%;
+  margin: auto;
+  position: relative;
+  box-sizing: content-box;
+  padding-bottom: 30px;
+}
+footer .end-container p {
+  color: white;
+  float: left;
+}
+footer .end-container .creditcard-img {
+
+  float: right;
+}
+footer .end-container .creditcard-img img {
+  width: 50px;
+  margin-right: 10px;
+  background: white;
+  padding: 10px 20px;
+  box-sizing: content-box;
+  border-radius: 10px;
+}
+footer .end-container .creditcard-img .master-img {
+  padding: 10px 12px;
+  width: 30px;
+  margin-top: 3px;
 }
