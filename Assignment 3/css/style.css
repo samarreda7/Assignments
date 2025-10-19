@@ -118,7 +118,7 @@ nav .container ul li:hover a {
 .hero .container {
   width: 85%;
   margin: auto;
-  margin-top: 2vh;
+  margin-top: 8vh;
 }
 .hero-img {
   padding: 20px;
@@ -152,17 +152,20 @@ nav .container ul li:hover a {
   padding-bottom: 5px;
 }
 
-.hero-content .hero-buttons button {
+.hero-content .hero-principles p {
   float: left;
   background: rgb(166, 132, 255);
   color: white;
-  width: 130px;
+  padding: 1px 10px;
+  text-align: center;
   margin-left: 25px;
-  height: 25px;
+  font-size: 14px;
+  font-weight: 600;
   margin-top: 5px;
   border-radius: 20px;
   margin-bottom: 10px;
   border: none;
+  box-sizing: content-box;
 }
 .hero-content h1 {
   font-size: 45px;
@@ -223,7 +226,25 @@ nav .container ul li:hover a {
 .hero-content .cart-wishlist-buttons button:hover {
   transform: scale(1.05);
 }
-
+.cart-wishlist-buttons button .button-container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.cart-wishlist-buttons button .button-container .button-img {
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.hero-content .cart-wishlist-buttons button div img {
+  width: 100%;
+  margin: 0 5px;
+}
+.hero-content .cart-wishlist-buttons button .button-container p {
+  margin: 0 5px;
+  padding: 0;
+  display: inline;
+}
 .hero-content .cart-wishlist-buttons .cart {
   background: rgb(142, 81, 255);
   color: white;
@@ -258,7 +279,7 @@ nav .container ul li:hover a {
   color: rgb(142, 81, 255);
 }
 .container .content p {
-  font-size: 22px;
+  font-size: 20px;
   color: rgb(51, 51, 51);
   margin-top: 10px;
 }
@@ -310,8 +331,19 @@ nav .container ul li:hover a {
   display: inline;
   padding: 3px 20px;
 }
+.container table tr:nth-child(9) {
+  font-size: 18px;
+  font-weight: 700;
+}
+.container table tr:nth-child(9) td:nth-child(2) {
+  color: rgb(112, 8, 231);
+  font-size: 21px;
+  font-weight: 700;
+}
 .container table td:nth-child(1),
 .container table th:nth-child(1) {
+  font-size: 16px;
+  font-weight: normal;
   text-align: left;
 }
 .specifications .container table .orange-td {
@@ -443,7 +475,7 @@ tfoot {
   color: rgb(51, 51, 51);
   margin-top: 5px;
 }
-.container .stats .content{
+.container .stats .content {
   border-bottom: 2px solid rgb(229, 231, 235);
   margin-bottom: 10px;
 }
@@ -829,14 +861,15 @@ footer .end-container {
   margin: auto;
   position: relative;
   box-sizing: content-box;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 footer .end-container p {
   color: white;
   float: left;
+  font-size: 15px;
+  font-weight: 500;
 }
 footer .end-container .creditcard-img {
-
   float: right;
 }
 footer .end-container .creditcard-img img {
