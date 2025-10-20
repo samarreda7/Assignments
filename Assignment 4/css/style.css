@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: "Exo", sans-serif;
+}
+:root {
+  --main-text-color: rgb(17, 17, 17);
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 15px;
+}
+nav {
+  color: var(--main-text-color);
+  display: flex;
+  width: 95%;
+  margin: auto;
+  border: 3px solid var(--main-text-color);
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+}
+nav h1 {
+  margin-left: 20px;
+}
+nav h1 span {
+  color: rgb(255, 105, 0);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 45%;
+  justify-content: space-around;
+  font-size: 15px;
+  font-weight: 600;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+nav ul li a:hover {
+  color: rgba(255, 106, 0, 0.792);
+}
+nav ul li svg {
+  width: 15px;
+  opacity: 0.3;
+  margin-left: 10px;
+}
+nav button {
+  margin-right: 20px;
+  width: 150px;
+  height: 40px;
+  border-width: 3px;
+  border-radius: 20px;
+  background: rgb(255, 209, 91);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+nav button:hover {
+  transform: translateX(10px) translateY(3px);
+}
