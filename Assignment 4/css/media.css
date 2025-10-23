@@ -7,7 +7,7 @@
     border: 3px solid var(--main-text-color);
     box-shadow: 2px 2px 0 var(--main-text-color);
     background: white;
-    transition:.3s ease ;
+    transition: 0.3s ease;
     cursor: pointer;
   }
   nav .svg-nav:hover {
@@ -32,10 +32,31 @@
   .container .left-side .hero-img {
     width: 100%;
   }
- 
+  .latest-articles .container .left-side {
+    width: 100%;
+  }
+  .latest-articles .container .right-side {
+    width: 100%;
+  }
+  .card .card-content {
+    width: 100%;
+  }
+  .card .card-content .card-foot p {
+    width: 50%;
+    flex: 1 1 45%;
+  }
+  .card .card-content .card-foot {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
 }
 @media (max-width: 740px) {
- .container .hero-text .text-box p{
+  .container .hero-text .text-box p {
     font-size: 21px;
+  }
+    .card .card-content .card-foot p {
+    width: 100%;
+    flex: 1 1 95%;
   }
 }
