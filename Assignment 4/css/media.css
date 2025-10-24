@@ -49,14 +49,29 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+  .latest-articles .left-side button {
+    width: 70%;
+    height: 55px;
+  }
+  .authors .authors-cards .author-card {
+    flex: 1 1 70%;
+    margin-bottom: 20px;
+  }
 
 }
 @media (max-width: 740px) {
   .container .hero-text .text-box p {
     font-size: 21px;
   }
-    .card .card-content .card-foot p {
+  .card .card-content .card-foot p {
     width: 100%;
     flex: 1 1 95%;
+  }
+  .latest-articles .container .left-side .head p {
+    display: none;
+  }
+  .authors .authors-cards .author-card .description{
+    font-size: .9rem;
+    margin: .5rem auto;
   }
 }
