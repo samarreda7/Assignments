@@ -12,9 +12,27 @@
     background: white;
     transition: 0.3s ease;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+  }
+  nav .svg-nav a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+  }
+  nav .svg-nav a:visited {
+    color: var(--main-text-color);
   }
   nav .svg-nav:hover {
     transform: translateX(-2px) translateY(-2px);
+  }
+  #mobile-menu:target {
+    display: block;
+    right: 0;
   }
   nav ul,
   nav button {
@@ -61,6 +79,9 @@
 }
 
 @media (max-width: 1024px) {
+  header .mobile-menu {
+    width: 35%;
+  }
   .hero .container {
     row-gap: 5vh;
   }
@@ -117,6 +138,9 @@
 }
 
 @media (max-width: 740px) {
+  header .mobile-menu {
+    width: 50%;
+  }
   .container .hero-text .text-box p {
     font-size: 21px;
   }
@@ -126,6 +150,9 @@
   }
   .latest-articles .container .left-side .head p {
     display: none;
+  }
+  .latest-articles .card .card-content .content-sign {
+    padding: 0 10%;
   }
   .authors .authors-cards .author-card .description {
     font-size: 0.9rem;
