@@ -1,4 +1,7 @@
 @media (max-width: 1270px) {
+  nav {
+    width: 95%;
+  }
   nav .svg-nav {
     margin-right: 20px;
     width: 40px;
@@ -17,7 +20,46 @@
   nav button {
     display: none;
   }
+  .hero .container {
+    width: 95%;
+  }
+  .latest-articles .container {
+    width: 95%;
+  }
+  .authors .container {
+    width: 95%;
+  }
+
+  .authors .authors-cards .author-card {
+    width: 48%;
+  }
+  .community .container {
+    width: 95%;
+  }
+  .footer .container .section:nth-of-type(1) {
+    width: 100%;
+  }
+  .footer .container .section:nth-of-type(2) {
+    width: 30%;
+  }
+  .footer .container .section:nth-of-type(3) {
+    width: 70%;
+  }
+  .footer .footer-end {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer .footer-end p {
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footer-end .terms {
+    width: 100%;
+    justify-content: center;
+    gap: 5%;
+  }
 }
+
 @media (max-width: 1024px) {
   .hero .container {
     row-gap: 5vh;
@@ -27,7 +69,7 @@
   }
   .hero .container .left-side {
     width: 100%;
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
   }
   .container .left-side .hero-img {
     width: 100%;
@@ -57,8 +99,23 @@
     flex: 1 1 70%;
     margin-bottom: 20px;
   }
+  .authors .authors-cards .author-card .author-img {
+    width: 22%;
+  }
 
+  .community .container .benfits {
+    width: 100%;
+    padding: 2px;
+  }
+
+  .community .container .rebels-opinion {
+    width: 100%;
+  }
+  .container .benfits .benfit-list .benfit-section {
+    column-gap: 2%;
+  }
 }
+
 @media (max-width: 740px) {
   .container .hero-text .text-box p {
     font-size: 21px;
@@ -70,8 +127,28 @@
   .latest-articles .container .left-side .head p {
     display: none;
   }
-  .authors .authors-cards .author-card .description{
-    font-size: .9rem;
-    margin: .5rem auto;
+  .authors .authors-cards .author-card .description {
+    font-size: 0.9rem;
+    margin: 0.5rem auto;
+  }
+  .community .container .benfits .join-description {
+    line-height: 1.7rem;
+    font-size: 1rem;
+  }
+  .container .benfits .benfit-list .benfit-section {
+    column-gap: 3%;
+  }
+  .community .container .benfits .benfit-list .benfit-section p {
+    font-size: 0.9rem;
+  }
+  .footer .footer-end {
+    font-size: 0.8rem;
+  }
+  .footer .footer-end .terms {
+    gap: 2%;
+  }
+  .footer .container .section:nth-of-type(2),
+  .footer .container .section:nth-of-type(3) {
+    width: 100%;
   }
 }
