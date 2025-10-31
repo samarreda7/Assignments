@@ -14,16 +14,15 @@ body {
   --second-main-color: rgb(74, 85, 101);
 }
 .container {
-  background: red;
   display: flex;
   align-items: flex-start;
   gap: 5px;
 }
 .side-section {
   width: 20%;
-  background: beige;
   position: sticky;
   top: 0;
+  border-left: 3px solid rgb(229,231,235);
 }
 .side-section .header {
   display: flex;
@@ -63,9 +62,9 @@ body {
   padding: 20px 25px 0 0;
 }
 .side-section .side-titles ul li {
-  font-size: 20px;
+  font-size: 17px;
   color: var(--gray-color);
-  font-weight: 650;
+  font-weight: 600;
   display: flex;
   align-items: center;
   column-gap: 3%;
@@ -84,7 +83,7 @@ body {
 .side-buttons ul {
   list-style: none;
   background: white;
-  padding: 20px 25px 0 0;
+  padding: 12px 25px 0 0;
 }
 .side-buttons ul li button {
   height: 45px;
@@ -92,11 +91,12 @@ body {
   display: flex;
   align-items: center;
   column-gap: 15px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   border: none;
   background: none;
-  margin: 28px;
+  margin: 21px;
+  cursor: pointer;
 }
 .side-buttons ul li .button-img {
   width: 40px;
@@ -125,7 +125,8 @@ body {
 main {
   width: 80%;
   position: relative;
-  background: rgb(210, 212, 213);
+    background: rgb(249, 250, 251);
+
 }
 .main-container {
   width: 95%;
@@ -147,6 +148,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+  background: rgb(251, 252, 253);
 }
 .main-container .header .right-header {
   width: 25%;
@@ -157,9 +159,10 @@ main {
   margin-right: 20px;
 }
 .main-container .header .right-header .coins-img {
-  width: 70px;
+  width: 60px;
   background-color: var(--first-main-color);
   border-radius: 20px;
+  padding: 15px;
 }
 .main-container .header .right-header .coins-img img {
   width: 100%;
@@ -296,16 +299,18 @@ main .second-container {
     "budget-card .  ."
     "budget-card .  .";
   column-gap: 10px;
-  margin-top: 10px;
   row-gap: 10px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 main .notification_card {
-  background: white;
+  background: rgb(251, 252, 253);
   grid-area: notification_card;
   padding: 15px;
   border: 3px solid rgb(226, 227, 228);
   border-radius: 10px;
+  margin: 20px auto;
 }
 main .notification_card h3 {
   margin: 15px 0;
@@ -395,7 +400,7 @@ main .notification_card button {
 }
 
 main .monthly_receipts {
-  background: white;
+  background: rgb(251, 252, 253);
   grid-area: monthly_receipts;
   border: 3px solid rgb(226, 227, 228);
   border-radius: 10px;
@@ -574,30 +579,765 @@ main
   font-weight: 500;
   color: var(--second-main-color);
 }
-main
-  .monthly_receipts
-  .receipts-card-container
-  .card
-  p
-  main
-  .transactions-card {
-  background: plum;
-
+main .transactions-card {
+  background: rgb(251, 252, 253);
   grid-area: transactions-card;
+  padding: 0 25px;
+  border: 3px solid rgb(221, 223, 224);
+  border-radius: 20px;
+  width: 98%;
+  margin: 20px auto;
 }
+.transactions-card .head {
+  display: flex;
+  justify-content: space-between;
+}
+.transactions-card .head h3 {
+  width: 30%;
+}
+.transactions-card .head button {
+  width: 100px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  text-align: left;
+  color: var(--second-main-color);
+}
+.transactions-card table {
+  width: 100%;
+  text-align: center;
+}
+.transactions-card table tr {
+  height: 10vh;
+}
+.transactions-card table tr td {
+  font-size: 14px;
+}
+.transactions-card table tr th:nth-of-type(2),
+.transactions-card table tr th:nth-of-type(3),
+.transactions-card table tr th:nth-of-type(4),
+.transactions-card table tr th:nth-of-type(5) {
+  width: 18%;
+}
+
+.transactions-card table tr th:nth-of-type(1) {
+  text-align: right;
+}
+.transactions-card table tr td:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+.transactions-card table tr td:nth-of-type(1) .tr-img {
+  width: 45px;
+}
+.transactions-card table tr td:nth-of-type(1) .tr-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.transactions-card table tr td:nth-of-type(1) .tr-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: beige;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.transactions-card table tr td:nth-of-type(1) .green {
+  background: rgb(219, 252, 231);
+}
+.transactions-card table tr td:nth-of-type(1) .blue {
+  background: rgb(219, 234, 254);
+}
+.transactions-card table tr td:nth-of-type(1) .beige {
+  background: rgb(255, 237, 212);
+}
+.transactions-card table tr td:nth-of-type(1) .burgundy {
+  background: rgb(255, 226, 226);
+}
+.transactions-card table tr td:nth-of-type(1) .sky {
+  background: rgb(206, 250, 254);
+}
+.transactions-card table tr td:nth-of-type(1) .purple {
+  background: rgb(243, 232, 255);
+}
+
+.transactions-card table tr td:nth-of-type(1) .tr-icon img {
+  border-radius: 50%;
+}
+.transactions-card table tr td:nth-of-type(1) .tr-text p:nth-of-type(1) {
+  font-size: 15px;
+  margin: 3px;
+  font-weight: 500;
+}
+.transactions-card table tr td:nth-of-type(1) .tr-text p:nth-of-type(2) {
+  font-size: 13px;
+  margin: 3px;
+  text-align: start;
+}
+
+.transactions-card table tr td:nth-of-type(2) .tr-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  display: inline;
+  padding: 0 5px;
+  height: 30px;
+  margin: auto;
+  border-radius: 15px;
+  font-size: 15px;
+}
+.transactions-card table tr td:nth-of-type(2) .green {
+  background: rgb(219, 252, 231);
+}
+.transactions-card table tr td:nth-of-type(2) .green p {
+  color: rgb(13, 110, 58);
+}
+.transactions-card table tr td:nth-of-type(2) .blue {
+  background: rgb(219, 234, 254);
+}
+.transactions-card table tr td:nth-of-type(2) .blue p {
+  color: rgb(25, 60, 184);
+}
+.transactions-card table tr td:nth-of-type(2) .beige {
+  background: rgb(255, 237, 212);
+}
+.transactions-card table tr td:nth-of-type(2) .beige p {
+  color: rgb(159, 45, 0);
+}
+.transactions-card table tr td:nth-of-type(2) .burgundy {
+  background: rgb(255, 226, 226);
+}
+.transactions-card table tr td:nth-of-type(2) .burgundy p {
+  color: rgb(159, 7, 18);
+}
+.transactions-card table tr td:nth-of-type(2) .sky {
+  background: rgb(206, 250, 254);
+}
+.transactions-card table tr td:nth-of-type(2) .sky p {
+  color: rgb(8, 101, 125);
+}
+.transactions-card table tr td:nth-of-type(2) .purple {
+  background: rgb(243, 232, 255);
+}
+.transactions-card table tr td:nth-of-type(2) .purple p {
+  color: rgb(110, 17, 176);
+}
+
+.transactions-card table tr td:nth-of-type(2) p {
+  display: inline;
+  font-size: 15px;
+}
+.transactions-card table tr td:nth-of-type(2) img {
+  width: 18px;
+}
+
+.transactions-card table tr td:nth-of-type(5) {
+  font-weight: 600;
+}
+.transactions-card table tr td:nth-of-type(4) .complete {
+  color: rgb(13, 110, 58);
+  background: rgb(219, 252, 231);
+  font-weight: 600;
+  display: inline;
+  padding: 1px 5px;
+  border-radius: 25px;
+}
+.transactions-card table tr td:nth-of-type(4) .pendent {
+  color: rgb(138, 85, 26);
+  background: rgb(254, 249, 194);
+  font-weight: 600;
+  display: inline;
+  padding: 1px 5px;
+  border-radius: 25px;
+}
+/* ///////////////////////////////////budget-card//////////////////////////////////////// */
 main .budget-card {
-  background: olivedrab;
+  background: rgb(251, 252, 253);
+  border: 3px solid rgb(220, 222, 223);
+  border-radius: 20px;
+  width: 98%;
+  margin: auto;
   grid-area: budget-card;
 }
-main .income-expenses-card {
-  background: green;
-  grid-area: income-expenses-card;
+main .budget-card .head {
+  display: flex;
+  justify-content: space-between;
 }
+main .budget-card .head h3 {
+  width: 50%;
+}
+main .budget-card .head button {
+  width: 100px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  text-align: left;
+  color: var(--second-main-color);
+}
+
+main .budget-card .section:nth-of-type(2) {
+  padding: 10px 20px;
+  background: rgb(238, 244, 255);
+  border: 3px solid rgb(229, 240, 254);
+  border-radius: 20px;
+  width: 90%;
+  margin: 20px auto;
+}
+main .budget-card .section:nth-of-type(2) p:nth-of-type(1) {
+  color: rgb(34, 104, 252);
+  margin: 3px;
+}
+main .budget-card .section:nth-of-type(2) p:nth-of-type(2) {
+  color: rgb(28, 57, 142);
+  font-weight: 600;
+  font-size: 28px;
+  opacity: 0.8;
+  margin: 3px;
+}
+main .budget-card .section:nth-of-type(2) p:nth-of-type(3) {
+  text-align: end;
+  color: var(--second-main-color);
+  margin: 5px;
+}
+main .budget-card .section:nth-of-type(2) p:nth-of-type(4) {
+  color: rgb(13, 110, 58);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: end;
+  margin: 5px;
+}
+main .budget-card .section:nth-of-type(2) .text-precentage {
+  display: flex;
+  justify-content: space-between;
+}
+main .budget-card .section:nth-of-type(2) .text-precentage p:nth-of-type(1),
+main .budget-card .section:nth-of-type(2) .text-precentage p:nth-of-type(2) {
+  font-size: 14px;
+  color: var(--second-main-color);
+}
+main .budget-card .section:nth-of-type(2) .main-precentage {
+  width: 98%;
+  height: 10px;
+  border-radius: 20px;
+  background: gray;
+  margin: auto;
+}
+main .budget-card .section:nth-of-type(2) .main-precentage .real-precentage {
+  width: 75%;
+  height: 10px;
+  border-radius: 20px;
+  background: rgb(81, 112, 254);
+}
+
+main .budget-card .section:nth-of-type(3) {
+  padding: 10px 20px;
+  background: rgb(238, 244, 255);
+  border: 3px solid rgb(229, 240, 254);
+  border-radius: 20px;
+  width: 90%;
+  margin: 20px auto;
+}
+main .budget-card .section:nth-of-type(3) .head-sec {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+main .budget-card .section:nth-of-type(3) .head-sec .img-container {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background: rgb(255, 237, 212);
+  border-radius: 5px;
+}
+main .budget-card .section:nth-of-type(3) .head-sec .img-container img {
+  width: 100%;
+}
+main .budget-card .section:nth-of-type(3) .head-sec .text-part {
+  width: 60%;
+}
+main
+  .budget-card
+  .section:nth-of-type(3)
+  .head-sec
+  .text-part
+  p:nth-of-type(1) {
+  margin: 2px;
+  font-weight: 600;
+}
+main
+  .budget-card
+  .section:nth-of-type(3)
+  .head-sec
+  .text-part
+  p:nth-of-type(2) {
+  margin: 2px;
+  color: var(--second-main-color);
+}
+main .budget-card .section:nth-of-type(3) > p:nth-of-type(1) {
+  text-align: end;
+  font-weight: 600;
+  margin: 5px;
+  font-size: 15px;
+}
+main .budget-card .section:nth-of-type(3) > p:nth-of-type(2) {
+  color: rgb(13, 110, 58);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: end;
+  margin: 5px;
+}
+main .budget-card .section:nth-of-type(3) > p:nth-of-type(2) span {
+  background: rgb(220, 252, 231);
+  padding: 0 7px;
+  border-radius: 20px;
+}
+main .budget-card .section:nth-of-type(3) .text-precentage {
+  display: flex;
+  justify-content: space-between;
+}
+main .budget-card .section:nth-of-type(3) .text-precentage p:nth-of-type(1),
+main .budget-card .section:nth-of-type(3) .text-precentage p:nth-of-type(2) {
+  font-size: 14px;
+  color: var(--second-main-color);
+}
+main .budget-card .section:nth-of-type(3) .main-precentage {
+  width: 98%;
+  height: 10px;
+  border-radius: 20px;
+  background: gray;
+  margin: auto;
+}
+main .budget-card .section:nth-of-type(3) .main-precentage .real-precentage {
+  width: 50%;
+  height: 10px;
+  border-radius: 20px;
+  background: rgb(255, 105, 0);
+}
+
+main .budget-card .section:nth-of-type(4) {
+  padding: 10px 20px;
+  background: rgb(238, 244, 255);
+  border: 3px solid rgb(229, 240, 254);
+  border-radius: 20px;
+  width: 90%;
+  margin: 20px auto;
+}
+main .budget-card .section:nth-of-type(4) .head-sec {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+main .budget-card .section:nth-of-type(4) .head-sec .img-container {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background: rgb(254, 226, 226);
+  border-radius: 5px;
+}
+main .budget-card .section:nth-of-type(4) .head-sec .img-container img {
+  width: 100%;
+}
+main .budget-card .section:nth-of-type(4) .head-sec .text-part {
+  width: 60%;
+}
+main
+  .budget-card
+  .section:nth-of-type(4)
+  .head-sec
+  .text-part
+  p:nth-of-type(1) {
+  margin: 2px;
+  font-weight: 600;
+}
+main
+  .budget-card
+  .section:nth-of-type(4)
+  .head-sec
+  .text-part
+  p:nth-of-type(2) {
+  margin: 2px;
+  color: var(--second-main-color);
+}
+main .budget-card .section:nth-of-type(4) > p:nth-of-type(1) {
+  text-align: end;
+  font-weight: 600;
+  margin: 5px;
+}
+main .budget-card .section:nth-of-type(4) > p:nth-of-type(2) {
+  color: rgb(171, 63, 59);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: end;
+  margin: 5px;
+}
+main .budget-card .section:nth-of-type(4) > p:nth-of-type(2) span {
+  background: rgb(254, 226, 226);
+  padding: 0 7px;
+  border-radius: 20px;
+}
+
+main .budget-card .section:nth-of-type(4) .main-precentage {
+  width: 98%;
+  height: 10px;
+  border-radius: 20px;
+  background: gray;
+  margin: auto;
+}
+main .budget-card .section:nth-of-type(4) .main-precentage .real-precentage {
+  width: 100%;
+  height: 10px;
+  border-radius: 20px;
+  background: rgb(171, 63, 59);
+}
+
+main .budget-card .section:nth-of-type(5) {
+  padding: 10px 20px;
+  background: rgb(238, 244, 255);
+  border: 3px solid rgb(229, 240, 254);
+  border-radius: 20px;
+  width: 90%;
+  margin: 20px auto;
+}
+main .budget-card .section:nth-of-type(5) .head-sec {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+main .budget-card .section:nth-of-type(5) .head-sec .img-container {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background: rgb(252, 231, 243);
+  border-radius: 5px;
+}
+main .budget-card .section:nth-of-type(5) .head-sec .img-container img {
+  width: 100%;
+}
+main .budget-card .section:nth-of-type(5) .head-sec .text-part {
+  width: 60%;
+}
+main
+  .budget-card
+  .section:nth-of-type(5)
+  .head-sec
+  .text-part
+  p:nth-of-type(1) {
+  margin: 2px;
+  font-weight: 600;
+}
+main
+  .budget-card
+  .section:nth-of-type(5)
+  .head-sec
+  .text-part
+  p:nth-of-type(2) {
+  margin: 2px;
+  color: var(--second-main-color);
+}
+main .budget-card .section:nth-of-type(5) > p:nth-of-type(1) {
+  text-align: end;
+  font-weight: 600;
+  margin: 5px;
+}
+main .budget-card .section:nth-of-type(5) > p:nth-of-type(2) {
+  color: rgb(159, 72, 54);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: end;
+  margin: 5px;
+}
+main .budget-card .section:nth-of-type(5) > p:nth-of-type(2) span {
+  background: rgb(254, 243, 199);
+  padding: 0 7px;
+  border-radius: 20px;
+}
+
+main .budget-card .section:nth-of-type(5) .main-precentage {
+  width: 98%;
+  height: 10px;
+  border-radius: 20px;
+  background: gray;
+  margin: auto;
+}
+main .budget-card .section:nth-of-type(5) .main-precentage .real-precentage {
+  width: 80%;
+  height: 10px;
+  border-radius: 20px;
+  background: rgb(246, 51, 154);
+}
+
+main .budget-card .section:nth-of-type(6) {
+  padding: 10px 20px;
+  background: rgb(238, 244, 255);
+  border: 3px solid rgb(229, 240, 254);
+  border-radius: 20px;
+  width: 90%;
+  margin: 20px auto;
+}
+main .budget-card .section:nth-of-type(6) .head-sec {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+main .budget-card .section:nth-of-type(6) .head-sec .img-container {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background: rgb(220, 252, 231);
+  border-radius: 5px;
+}
+main .budget-card .section:nth-of-type(6) .head-sec .img-container img {
+  width: 100%;
+}
+main .budget-card .section:nth-of-type(6) .head-sec .text-part {
+  width: 60%;
+}
+main
+  .budget-card
+  .section:nth-of-type(6)
+  .head-sec
+  .text-part
+  p:nth-of-type(1) {
+  margin: 2px;
+  font-weight: 600;
+}
+main
+  .budget-card
+  .section:nth-of-type(6)
+  .head-sec
+  .text-part
+  p:nth-of-type(2) {
+  margin: 2px;
+  color: var(--second-main-color);
+}
+main .budget-card .section:nth-of-type(6) > p:nth-of-type(1) {
+  text-align: end;
+  font-weight: 600;
+  margin: 5px;
+}
+main .budget-card .section:nth-of-type(6) > p:nth-of-type(2) {
+  color: rgb(13, 110, 58);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: end;
+  margin: 5px;
+}
+main .budget-card .section:nth-of-type(6) > p:nth-of-type(2) span {
+  background: rgb(220, 252, 231);
+  padding: 0 7px;
+  border-radius: 20px;
+}
+
+main .budget-card .section:nth-of-type(6) .main-precentage {
+  width: 98%;
+  height: 10px;
+  border-radius: 20px;
+  background: gray;
+  margin: auto;
+}
+main .budget-card .section:nth-of-type(6) .main-precentage .real-precentage {
+  width: 90%;
+  height: 10px;
+  border-radius: 20px;
+  background: rgb(0, 201, 81);
+}
+
+/* ///////////////////////////////////income-expenses-card//////////////////////////////////////// */
+
+main .income-expenses-card {
+  grid-area: income-expenses-card;
+  padding: 15px;
+  border: 3px solid rgb(231, 233, 236);
+  border-radius: 20px;
+  background: rgb(251, 252, 253);
+}
+
+main .income-expenses-card .head {
+  display: flex;
+  justify-content: space-between;
+}
+main .income-expenses-card .head h3 {
+  width: 70%;
+}
+main .income-expenses-card .head button {
+  width: 100px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  text-align: left;
+  color: var(--second-main-color);
+  font-size: 16px;
+}
+main .income-expenses-card .center-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .income-expenses-card .center-sec .sec {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  font-size: 15px;
+  color: rgb(100, 116, 139);
+}
+main .income-expenses-card .center-sec .square {
+  width: 15px;
+  height: 15px;
+}
+main
+  .income-expenses-card
+  .center-sec
+  .sec:nth-of-type(1)
+  .square:nth-of-type(1) {
+  background: rgb(16, 185, 129);
+}
+main
+  .income-expenses-card
+  .center-sec
+  .sec:nth-child(2)
+  .square:nth-of-type(1) {
+  background: rgb(239, 68, 68);
+}
+main .income-expenses-card .charts-container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  padding-top: 5vh;
+}
+main .income-expenses-card .charts-container .chart .columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50px;
+}
+main
+  .income-expenses-card
+  .charts-container
+  .chart
+  .columns
+  .column:nth-of-type(1) {
+  width: 20px;
+  height: 140px;
+  background: rgb(16, 185, 129);
+  border-radius: 5px 5px 0 0;
+}
+main
+  .income-expenses-card
+  .charts-container
+  .chart
+  .columns
+  .column:nth-of-type(2) {
+  width: 20px;
+  height: 70px;
+  background: rgb(239, 68, 68);
+  border-radius: 5px 5px 0 0;
+}
+main .income-expenses-card .chart-label {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(100, 116, 140);
+  font-weight: 700;
+  font-size: 15px;
+}
+/* ///////////////////////////////payment_methods//////////////////////////////////// */
+
 main .payment_methods {
-  background: greenyellow;
+  background: rgb(251, 252, 253);
   grid-area: payment_methods;
 }
+
+/* //////////////////////account-summary-card//////////////////// */
 main .account-summary-card {
-  background: red;
   grid-area: account-summary-card;
+  background: rgb(251, 252, 253);
+  padding: 15px;
+  border: 3px solid rgb(231, 233, 236);
+  border-radius: 20px;
+}
+
+main .account-summary-card .head {
+  display: flex;
+  justify-content: space-between;
+}
+main .account-summary-card .head h3 {
+  width: 70%;
+}
+main .account-summary-card .head button {
+  width: 100px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  text-align: left;
+  color: var(--second-main-color);
+  font-size: 16px;
+}
+main .account-summary-card .summary-card {
+  display: flex;
+  column-gap: 10%;
+  align-items: center;
+  margin-bottom: 20px;
+    background: rgb(249,250,251);
+  border: 3px solid rgb(245,246,247);
+  border-radius: 20px;
+  padding: 10px 0;
+}
+main .account-summary-card .summary-card .right-side {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+main .account-summary-card .summary-card .img-container {
+  width: 45px;
+  height: 45px;
+  padding: 7px;
+  background: rgb(219, 234, 254);
+  border-radius: 5px;
+}
+main .account-summary-card .summary-card .img-container img {
+  width: 90%;
+}
+main .account-summary-card .summary-card:nth-child(3) .img-container {
+  background: rgb(219, 252, 231);
+}
+main .account-summary-card .summary-card:nth-child(4) .img-container {
+  background: rgb(243, 232, 255);
+}
+
+main
+  .account-summary-card
+  .summary-card
+  .right-side
+  .text-part
+  p:nth-of-type(1) {
+  margin: 3px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+main
+  .account-summary-card
+  .summary-card
+  .right-side
+  .text-part
+  p:nth-of-type(2) {
+  margin: 3px 0;
+  font-size: 13px;
+  color: rgb(106, 114, 130);
+  font-weight: 600;
+
+}
+main .account-summary-card .summary-card .left-side {
+  font-weight: 700;
+  font-size: 17px;
+}
+main .account-summary-card .summary-card:nth-child(4) .left-side {
+  color: red;
 }
