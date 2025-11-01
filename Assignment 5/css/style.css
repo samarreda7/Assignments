@@ -22,7 +22,7 @@ body {
   width: 20%;
   position: sticky;
   top: 0;
-  border-left: 3px solid rgb(229,231,235);
+  border-left: 3px solid rgb(229, 231, 235);
 }
 .side-section .header {
   display: flex;
@@ -125,8 +125,7 @@ body {
 main {
   width: 80%;
   position: relative;
-    background: rgb(249, 250, 251);
-
+  background: rgb(249, 250, 251);
 }
 .main-container {
   width: 95%;
@@ -167,8 +166,7 @@ main {
 .main-container .header .right-header .coins-img img {
   width: 100%;
 }
-.main-container .header .right-header .text {
-}
+
 .main-container .header .right-header .text h2 {
   font-size: 2.7rem;
   font-weight: 900;
@@ -210,6 +208,21 @@ main {
   border: 2px solid rgb(228, 230, 233);
   border-radius: 5px;
   padding: 5px;
+  position: relative;
+}
+.main-container .header .left-header .bell-img-container .notify {
+  position: absolute;
+  width: 13px;
+  height: 14px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  top: 0;
+  right: 0;
+  transform: translate(5px , -14px);
+  background: rgb(251,44,54);
+  color: white;
 }
 .main-container .header .left-header .bell-img-container img {
   width: 100%;
@@ -258,7 +271,7 @@ main {
   padding-right: 10px;
 }
 .main-container .cards .card p:nth-of-type(1) {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--second-main-color);
   margin: 5px;
 }
@@ -267,16 +280,23 @@ main {
   font-weight: 800;
   margin: 5px;
 }
+.main-container .cards .card p:nth-of-type(3) {
+  font-size: 15px;
+  margin: 5px;
+}
 .main-container .cards .card:nth-of-type(1) p:nth-of-type(3),
 .main-container .cards .card:nth-of-type(2) p:nth-of-type(3) {
   color: rgb(39, 177, 86);
-}
-.main-container .cards .card p:nth-of-type(3) {
-  font-size: 20px;
-  margin: 5px;
+  display: flex;
+  align-items: center;
 }
 .main-container .cards .card:nth-of-type(3) p:nth-of-type(3) {
   color: rgb(234, 31, 41);
+  display: flex;
+  align-items: center;
+}
+.main-container .cards .card p:nth-of-type(3) img {
+  width: 15px;
 }
 
 main .second-container {
@@ -619,7 +639,10 @@ main .transactions-card {
 .transactions-card table tr th:nth-of-type(5) {
   width: 18%;
 }
-
+.transactions-card table tr td:nth-of-type(3) {
+  color: rgb(74, 85, 101);
+  font-weight: 600;
+}
 .transactions-card table tr th:nth-of-type(1) {
   text-align: right;
 }
@@ -762,6 +785,7 @@ main .budget-card {
   width: 98%;
   margin: auto;
   grid-area: budget-card;
+  padding: 0 20px;
 }
 main .budget-card .head {
   display: flex;
@@ -781,34 +805,34 @@ main .budget-card .head button {
 
 main .budget-card .section:nth-of-type(2) {
   padding: 10px 20px;
-  background: rgb(238, 244, 255);
+  background: rgb(238, 245, 255);
   border: 3px solid rgb(229, 240, 254);
   border-radius: 20px;
-  width: 90%;
-  margin: 20px auto;
+  margin-bottom: 15px;
 }
 main .budget-card .section:nth-of-type(2) p:nth-of-type(1) {
   color: rgb(34, 104, 252);
-  margin: 3px;
+  margin: 2px 0;
+  font-size: 16px;
 }
 main .budget-card .section:nth-of-type(2) p:nth-of-type(2) {
   color: rgb(28, 57, 142);
-  font-weight: 600;
+  font-weight: 800;
   font-size: 28px;
   opacity: 0.8;
-  margin: 3px;
+  margin: 2px 0;
 }
 main .budget-card .section:nth-of-type(2) p:nth-of-type(3) {
   text-align: end;
   color: var(--second-main-color);
-  margin: 5px;
+  margin: 2px;
 }
 main .budget-card .section:nth-of-type(2) p:nth-of-type(4) {
   color: rgb(13, 110, 58);
   font-size: 18px;
   font-weight: 700;
   text-align: end;
-  margin: 5px;
+  margin: 2px;
 }
 main .budget-card .section:nth-of-type(2) .text-precentage {
   display: flex;
@@ -835,11 +859,15 @@ main .budget-card .section:nth-of-type(2) .main-precentage .real-precentage {
 
 main .budget-card .section:nth-of-type(3) {
   padding: 10px 20px;
-  background: rgb(238, 244, 255);
-  border: 3px solid rgb(229, 240, 254);
+  background: rgb(252, 252, 253);
+  border: 3px solid rgb(241, 243, 244);
   border-radius: 20px;
-  width: 90%;
-  margin: 20px auto;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+main .budget-card .section:nth-of-type(3):hover {
+  background: rgb(245, 246, 248);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.237);
 }
 main .budget-card .section:nth-of-type(3) .head-sec {
   display: flex;
@@ -920,11 +948,15 @@ main .budget-card .section:nth-of-type(3) .main-precentage .real-precentage {
 
 main .budget-card .section:nth-of-type(4) {
   padding: 10px 20px;
-  background: rgb(238, 244, 255);
-  border: 3px solid rgb(229, 240, 254);
+  background: rgb(252, 252, 253);
+  border: 3px solid rgb(241, 243, 244);
   border-radius: 20px;
-  width: 90%;
-  margin: 20px auto;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+main .budget-card .section:nth-of-type(4):hover {
+  background: rgb(245, 246, 248);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.237);
 }
 main .budget-card .section:nth-of-type(4) .head-sec {
   display: flex;
@@ -996,11 +1028,15 @@ main .budget-card .section:nth-of-type(4) .main-precentage .real-precentage {
 
 main .budget-card .section:nth-of-type(5) {
   padding: 10px 20px;
-  background: rgb(238, 244, 255);
-  border: 3px solid rgb(229, 240, 254);
+  background: rgb(252, 252, 253);
+  border: 3px solid rgb(241, 243, 244);
   border-radius: 20px;
-  width: 90%;
-  margin: 20px auto;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+main .budget-card .section:nth-of-type(5):hover {
+  background: rgb(245, 246, 248);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.237);
 }
 main .budget-card .section:nth-of-type(5) .head-sec {
   display: flex;
@@ -1072,11 +1108,15 @@ main .budget-card .section:nth-of-type(5) .main-precentage .real-precentage {
 
 main .budget-card .section:nth-of-type(6) {
   padding: 10px 20px;
-  background: rgb(238, 244, 255);
-  border: 3px solid rgb(229, 240, 254);
+  background: rgb(252, 252, 253);
+  border: 3px solid rgb(241, 243, 244);
   border-radius: 20px;
-  width: 90%;
-  margin: 20px auto;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+main .budget-card .section:nth-of-type(6):hover {
+  background: rgb(245, 246, 248);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.237);
 }
 main .budget-card .section:nth-of-type(6) .head-sec {
   display: flex;
@@ -1170,7 +1210,7 @@ main .income-expenses-card .head button {
   font-weight: 600;
   text-align: left;
   color: var(--second-main-color);
-  font-size: 16px;
+  font-size: 15px;
 }
 main .income-expenses-card .center-sec {
   display: flex;
@@ -1215,7 +1255,7 @@ main .income-expenses-card .charts-container .chart .columns {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 50px;
+  width: 38px;
 }
 main
   .income-expenses-card
@@ -1223,8 +1263,8 @@ main
   .chart
   .columns
   .column:nth-of-type(1) {
-  width: 20px;
-  height: 140px;
+  width: 17px;
+  height: 110px;
   background: rgb(16, 185, 129);
   border-radius: 5px 5px 0 0;
 }
@@ -1234,8 +1274,8 @@ main
   .chart
   .columns
   .column:nth-of-type(2) {
-  width: 20px;
-  height: 70px;
+  width: 17px;
+  height: 60px;
   background: rgb(239, 68, 68);
   border-radius: 5px 5px 0 0;
 }
@@ -1245,16 +1285,213 @@ main .income-expenses-card .chart-label {
   display: flex;
   justify-content: space-between;
   color: rgb(100, 116, 140);
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 14px;
 }
 /* ///////////////////////////////payment_methods//////////////////////////////////// */
 
 main .payment_methods {
   background: rgb(251, 252, 253);
   grid-area: payment_methods;
+  background: rgb(251, 252, 253);
+  padding: 15px;
+  border: 3px solid rgb(231, 233, 236);
+  border-radius: 20px;
+}
+main .payment_methods .head {
+  display: flex;
+  justify-content: space-between;
+}
+main .payment_methods .head h3 {
+  width: 50%;
+}
+main .payment_methods .head button {
+  width: 100px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  text-align: left;
+  color: var(--second-main-color);
+}
+main .payment_methods .wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main .payment_methods .card-container {
+  perspective: 1000px;
+  position: relative;
+  height: 210px;
+  width: 100%;
+  margin: 20px auto;
 }
 
+main .payment_methods .card-container > div {
+  height: 210px;
+  width: 100%;
+  border-radius: 20px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 1s ease;
+}
+main .payment_methods .card-container .front-side {
+  background: rgb(55, 42, 172);
+  padding: 20px 25px;
+}
+main .payment_methods .card-container:hover .front-side {
+  transform: rotateY(180deg);
+}
+main .payment_methods .card-container:nth-of-type(3) .front-side {
+  background: rgb(199, 0, 54);
+}
+main .payment_methods .card-container:hover .back-side {
+  transform: rotateY(360deg);
+}
+
+main .payment_methods .card-container .front-side .first-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .payment_methods .card-container .front-side .first-sec .parent-triangle {
+  width: 55px;
+  height: 35px;
+  background: rgb(99, 99, 202);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main
+  .payment_methods
+  .card-container:nth-of-type(3)
+  .front-side
+  .first-sec
+  .parent-triangle {
+  background: rgb(210, 51, 94);
+}
+main
+  .payment_methods
+  .card-container
+  .front-side
+  .first-sec
+  .parent-triangle
+  .child-treiangle {
+  background: rgb(159, 153, 215);
+  width: 25px;
+  height: 20px;
+  border-radius: 5px;
+}
+main
+  .payment_methods
+  .card-container:nth-of-type(3)
+  .front-side
+  .first-sec
+  .parent-triangle
+  .child-treiangle {
+  background: rgb(228, 133, 158);
+}
+main .payment_methods .card-container .front-side .first-sec .pay-method-img {
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main
+  .payment_methods
+  .card-container
+  .front-side
+  .first-sec
+  .pay-method-img
+  img {
+  width: 80%;
+}
+main .payment_methods .card-container .front-side > p {
+  text-align: right;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  margin: 20px auto 5px;
+  word-spacing: 6px;
+}
+main .payment_methods .card-container .front-side .second-sec {
+  display: flex;
+  justify-content: space-between;
+}
+main .payment_methods .card-container .front-side .second-sec {
+  color: white;
+}
+main .payment_methods .card-container .front-side .second-sec p {
+  margin: 1px;
+  font-size: 12px;
+  font-weight: 600;
+}
+main
+  .payment_methods
+  .card-container:nth-of-type(4)
+  .front-side
+  .second-sec
+  .validation
+  p:nth-of-type(2) {
+  color: rgb(5, 214, 118);
+}
+main .payment_methods .card-container .back-side {
+  transform: rotateY(180deg);
+  background: rgb(12, 19, 33);
+  padding: 30px 10px;
+}
+main .payment_methods .card-container .back-side .fisrt-triangle {
+  height: 45px;
+  width: 98%;
+  margin: 2px auto;
+  border-radius: 5px;
+  border: 2px solid black;
+  background: linear-gradient(0.25turn, black 70%, rgb(39, 39, 39));
+}
+main .payment_methods .card-container .back-side > p {
+  font-size: 13px;
+  color: rgb(86, 92, 102);
+  margin: 5px auto;
+}
+main .payment_methods .card-container .back-side .second-part {
+  height: 30px;
+  width: 98%;
+  margin: auto;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+main .payment_methods .card-container .back-side .second-part p {
+  background: linear-gradient(0.25turn, white 70%, lightgray);
+  width: 100%;
+  margin: auto;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: end;
+  padding: 0 20px;
+}
+main .payment_methods .card-container .back-side .third-sec {
+  display: flex;
+  justify-content: end;
+}
+main
+  .payment_methods
+  .card-container
+  .back-side
+  .third-sec
+  .small-white-triangle {
+  width: 60px;
+  height: 33px;
+  background: white;
+  border-radius: 5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* //////////////////////account-summary-card//////////////////// */
 main .account-summary-card {
   grid-area: account-summary-card;
@@ -1278,15 +1515,15 @@ main .account-summary-card .head button {
   font-weight: 600;
   text-align: left;
   color: var(--second-main-color);
-  font-size: 16px;
+  font-size: 15px;
 }
 main .account-summary-card .summary-card {
   display: flex;
   column-gap: 10%;
   align-items: center;
   margin-bottom: 20px;
-    background: rgb(249,250,251);
-  border: 3px solid rgb(245,246,247);
+  background: rgb(249, 250, 251);
+  border: 3px solid rgb(245, 246, 247);
   border-radius: 20px;
   padding: 10px 0;
 }
@@ -1332,7 +1569,6 @@ main
   font-size: 13px;
   color: rgb(106, 114, 130);
   font-weight: 600;
-
 }
 main .account-summary-card .summary-card .left-side {
   font-weight: 700;
